@@ -42,10 +42,16 @@ class Game {
       this.screen2 = app.loadImage("./images/tienda.png");
       this.screen3 = app.loadImage("./images/start.png");
       this.screen4 = app.loadImage("./images/vestier.png");
-      this.screen5 = app.loadImage("./images/instrucciones.png");
+      this.screen5 = app.loadImage("./images/reinstrucciones.png");
       this.npc = app.loadImage("./images/NPC.png");
       this.nextButton = app.loadImage("./images/button.png");
+      this.sugerirButton = app.loadImage("./images/sugerirButton.png");
+
       this.clotheButton = app.loadImage("./images/botonPrenda.png");
+      this.sadface = app.loadImage("./images/sadface.png");
+      this.mediumface = app.loadImage("./images/mediumface.png");
+      this.happyface = app.loadImage("./images/happyface.png");
+
 
       this.inicial1 = app.loadImage("./1inicial.png");
 
@@ -284,7 +290,7 @@ class Game {
             app.text("Prenda inferior",750, 105);
             app.text("Zapatos",970, 105);
 
-            app.image(this.nextButton, 700, 630, this.nextButton.width / 2, this.nextButton.height / 2);
+            app.image(this.sugerirButton, 700, 630, this.nextButton.width / 2, this.nextButton.height / 2);
 
             break;
 
@@ -296,8 +302,22 @@ class Game {
             app.rect(380, 210, 520, 300, 40);
 
             app.fill(243, 5, 105);
-            //if(this.finalScore>);
-            app.text(`Tu puntaje es: ${Math.floor(this.finalScore)}`,550, 355);
+            if(this.finalScore >= 0 && this.finalScore <= 166){
+               app.image(this.sadface, 570,315,140,140);
+            };
+
+            if(this.finalScore >= 167 && this.finalScore <= 335){
+               app.image(this.mediumface, 570,315,140,140);
+            };
+
+            if(this.finalScore >= 336 && this.finalScore <= 500){
+               app.image(this.happyface, 570,315,140,140);
+            };
+
+            
+
+            app.text(`¿Qué tan satisfechos quedaron tus clientes?:`,440, 282);
+            //${Math.floor(this.finalScore)}
             break;
 
 
@@ -306,6 +326,9 @@ class Game {
                break;
 
       }
+
+      app.fill(0);
+      app.text(app.mouseX + "x" + app.mouseY + "y", app.mouseX, app.mouseY);
    
    }
 
@@ -319,7 +342,7 @@ class Game {
 
          case 1:
             this.newText =
-               "Primero te daré algunos consejos: \nRecuerda que los colores oscuros van bien en la noche. Acentuar las caderas se logra enfatizando la cintura. Ten muy en cuenta el clima para las prendas. Y las líneas dependiendo de su dirección pueden hacer que alguien se vea más delgado o con más peso!. Eso es todo por ahora, veamos como lo haces... \n\n¡Buena suerte! ";
+               "Primero te daré algunos consejos: \n• Recuerda que los colores oscuros van bien en la noche.\n• Acentuar las caderas se logra enfatizando la cintura. \n• Ten muy en cuenta el clima para las prendas. \n• Y las líneas dependiendo de su dirección pueden hacer que alguien se vea más delgado o con más peso!. \n• Eso es todo por ahora, veamos como lo haces... \n\n¡Buena suerte! ";
 
             if (this.currentText == this.newText && 
                app.mouseX > 300 && app.mouseX < 300+this.nextButton.width / 2 &&
@@ -525,10 +548,11 @@ class Game {
 
 
             case 5: 
-            //if();
-            this.currentScreen = 2;
+            if(app.mouseX > 1030 && app.mouseX < 1232 &&
+               app.mouseY > 613 && app.mouseY < 668){
 
-
+                  this.currentScreen = 2;
+         }
 
             break;
       }
