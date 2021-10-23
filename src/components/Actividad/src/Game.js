@@ -327,8 +327,8 @@ class Game {
 
       }
 
-      app.fill(0);
-      app.text(app.mouseX + "x" + app.mouseY + "y", app.mouseX, app.mouseY);
+     /* app.fill(0);
+      app.text(app.mouseX + "x" + app.mouseY + "y", app.mouseX, app.mouseY);*/
    
    }
 
