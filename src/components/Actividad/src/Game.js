@@ -44,6 +44,7 @@ class Game {
       this.screen4 = app.loadImage("./images/vestier.png");
       this.npc = app.loadImage("./images/NPC.png");
       this.nextButton = app.loadImage("./images/button.png");
+      this.clotheButton = app.loadImage("./images/botonPrenda.png");
 
       this.inicial1 = app.loadImage("./1inicial.png");
 
@@ -219,27 +220,37 @@ class Game {
 
          case 3:
             app.image(this.screen4, 0, 0);
-            app.fill(255, 217, 217);
+            //app.fill(255, 217, 217);
+            app.fill(228, 131, 182,90);
             
             
             if(this.personIndex===1){
                app.rect(450, 150, 700, 450, 40);
 
                app.textSize(16);
-               app.fill(243, 5, 105);
+               
+               app.fill(255);
                app.text(this.persons[this.personIndex].hints,490, 580);
             }else{
+               app.fill(228, 131, 182,90);
                app.rect(500, 150, 600, 450, 40);
-
+               /*app.fill(172,25,166);
+               app.rect(500, 550, 600, 50, 20)
                app.textSize(16);
-               app.fill(243, 5, 105);
-               app.text(this.persons[this.personIndex].hints,540, 580);
+               app.fill(255);
+               app.text(this.persons[this.personIndex].hints,540, 580);*/
             }
-            
-            app.fill(255, 217, 217);
-            app.rect(525, 80, 150, 40, 40);
-            app.rect(725, 80, 150, 40, 40);
-            app.rect(925, 80, 150, 40, 40);
+
+            ///AQUI ESTAN LOS BOTONES DE LA ROPA
+            app.image(this.clotheButton, 518, 75, 170, 60);
+            app.image(this.clotheButton, 718, 75, 170, 60);
+            app.image(this.clotheButton, 918, 75, 170, 60);
+           
+            app.fill(172,25,166);
+            app.rect(500, 550, 600, 50, 20)
+            app.textSize(16);
+            app.fill(255);
+            app.text(this.persons[this.personIndex].hints,540, 580); 
 
             this.persons[this.personIndex].paint(app);
             this.armarios[this.personIndex].paint(app);
@@ -267,7 +278,7 @@ class Game {
                }
             }
             app.textSize(16);
-            app.fill(243, 5, 105);
+            app.fill(255);
             app.text("Prenda superior",543, 105);
             app.text("Prenda inferior",750, 105);
             app.text("Zapatos",970, 105);
@@ -301,7 +312,7 @@ class Game {
 
          case 1:
             this.newText =
-               "Primero te daré algunos consejos: Recuerda que los colores oscuros van bien en la noche. Acentuar las caderas se logra enfatizando la cintura. Ten muy en cuenta el clima para las prendas. Y las líneas dependiendo de su dirección pueden hacer que alguien se vea más delgado o con más peso!. Eso es todo por ahora, veamos como lo haces... \n\n¡Buena suerte! ";
+               "Primero te daré algunos consejos: \nRecuerda que los colores oscuros van bien en la noche. Acentuar las caderas se logra enfatizando la cintura. Ten muy en cuenta el clima para las prendas. Y las líneas dependiendo de su dirección pueden hacer que alguien se vea más delgado o con más peso!. Eso es todo por ahora, veamos como lo haces... \n\n¡Buena suerte! ";
 
             if (this.currentText == this.newText && 
                app.mouseX > 300 && app.mouseX < 300+this.nextButton.width / 2 &&
