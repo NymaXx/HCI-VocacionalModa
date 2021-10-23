@@ -42,6 +42,7 @@ class Game {
       this.screen2 = app.loadImage("./images/tienda.png");
       this.screen3 = app.loadImage("./images/start.png");
       this.screen4 = app.loadImage("./images/vestier.png");
+      this.screen5 = app.loadImage("./images/instrucciones.png");
       this.npc = app.loadImage("./images/NPC.png");
       this.nextButton = app.loadImage("./images/button.png");
       this.clotheButton = app.loadImage("./images/botonPrenda.png");
@@ -295,8 +296,14 @@ class Game {
             app.rect(380, 210, 520, 300, 40);
 
             app.fill(243, 5, 105);
+            //if(this.finalScore>);
             app.text(`Tu puntaje es: ${Math.floor(this.finalScore)}`,550, 355);
             break;
+
+
+            case 5:
+               app.image(this.screen5,0,0);
+               break;
 
       }
    
@@ -318,7 +325,7 @@ class Game {
                app.mouseX > 300 && app.mouseX < 300+this.nextButton.width / 2 &&
                app.mouseY > 500 && app.mouseY < 500+this.nextButton.height / 2) {
               
-               this.currentScreen = 2;
+               this.currentScreen = 5;
                
             }else if (app.mouseX > 300 && app.mouseX < 300+this.nextButton.width / 2 &&
                         app.mouseY > 500 && app.mouseY < 500+this.nextButton.height / 2) {
@@ -513,6 +520,15 @@ class Game {
                      this.setPositions(this.personIndex);
                }
             }
+
+            break;
+
+
+            case 5: 
+            //if();
+            this.currentScreen = 2;
+
+
 
             break;
       }
