@@ -302,15 +302,15 @@ class Game {
             app.rect(380, 210, 520, 300, 40);
 
             app.fill(243, 5, 105);
-            if(this.finalScore >= 0 && this.finalScore <= 166){
+            if(this.finalScore >= 0 && this.finalScore <= 66){
                app.image(this.sadface, 570,315,140,140);
             };
 
-            if(this.finalScore >= 167 && this.finalScore <= 335){
+            if(this.finalScore >= 167 && this.finalScore <= 135){
                app.image(this.mediumface, 570,315,140,140);
             };
 
-            if(this.finalScore >= 336 && this.finalScore <= 500){
+            if(this.finalScore >= 136 && this.finalScore <= 200){
                app.image(this.happyface, 570,315,140,140);
             };
 
@@ -563,275 +563,275 @@ class Game {
       if(person == 0 && this.persons[person].armario[0]==this.person1Top1){
          this.topX=203;
          this.topY=202;
-         this.persons[person].scoreTop=10;
+         this.persons[person].scoreTop=4;
       }
 
       if(person == 0 && this.persons[person].armario[0]==this.person1Top2){
          this.topX=163;
          this.topY=184;
-         this.persons[person].scoreTop=25;
+         this.persons[person].scoreTop=10;
       }
 
       if(person == 0 && this.persons[person].armario[0]==this.person1Top3){
          this.topX=160;
          this.topY=180;
-         this.persons[person].scoreTop=33.3;
+         this.persons[person].scoreTop=13.3;
       }
 
       if(person == 0 && this.persons[person].armario[1]==this.person1pant1){
          this.pantX=201;
          this.pantY=353;
-         this.persons[person].scorePants=30;
+         this.persons[person].scorePants=12;
       }
 
       if(person == 0 && this.persons[person].armario[1]==this.person1pant2){
          this.pantX=197;
          this.pantY=353;
-         this.persons[person].scorePants=33.3;
+         this.persons[person].scorePants=13.3;
       }
 
       if(person == 0 && this.persons[person].armario[1]==this.person1pant3){
          this.pantX=192;
          this.pantY=353;
-         this.persons[person].scorePants=25;
+         this.persons[person].scorePants=10;
       }
 
       if(person == 0 && this.persons[person].armario[2]==this.person1shoes1){
          this.shoesX=211;
          this.shoesY=654;
-         this.persons[person].scoreShoes=33.3;
+         this.persons[person].scoreShoes=13.3;
       }
 
       if(person == 0 && this.persons[person].armario[2]==this.person1shoes2){
          this.shoesX=213;
          this.shoesY=645;
-         this.persons[person].scoreShoes=25;
+         this.persons[person].scoreShoes=10;
       }
 
       if(person == 0 && this.persons[person].armario[2]==this.person1shoes3){
          this.shoesX=211;
          this.shoesY=640;
-         this.persons[person].scoreShoes=15;
+         this.persons[person].scoreShoes=6;
       }
       //person 2
 
       if(person == 1 && this.persons[person].armario[0]==this.person2Top1){
          this.topX=161;
          this.topY=170;
-         this.persons[person].scoreTop=33.3;
+         this.persons[person].scoreTop=13.3;
       }
 
       if(person == 1 && this.persons[person].armario[0]==this.person2Top2){
          this.topX=157;
          this.topY=179;
-         this.persons[person].scoreTop=25;
+         this.persons[person].scoreTop=10;
       }
 
       if(person == 1 && this.persons[person].armario[0]==this.person2Top3){
          this.topX=160;
          this.topY=179;
-         this.persons[person].scoreTop=20;
+         this.persons[person].scoreTop=8;
       }
 
       if(person == 1 && this.persons[person].armario[1]==this.person2pant1){
          this.pantX=202;
          this.pantY=290;
-         this.persons[person].scorePants=33.3;
+         this.persons[person].scorePants=13.3;
       }
 
       if(person == 1 && this.persons[person].armario[1]==this.person2pant2){
          this.pantX=201;
          this.pantY=290;
-         this.persons[person].scorePants=15;
+         this.persons[person].scorePants=6;
       }
 
       if(person == 1 && this.persons[person].armario[1]==this.person2pant3){
          this.pantX=162;
          this.pantY=296;
-         this.persons[person].scorePants=5;
+         this.persons[person].scorePants=2;
       }
 
       if(person == 1 && this.persons[person].armario[2]==this.person2shoes1){
          this.shoesX=190;
          this.shoesY=560;
-         this.persons[person].scoreShoes=33.3;
+         this.persons[person].scoreShoes=13.3;
       }
 
       if(person == 1 && this.persons[person].armario[2]==this.person2shoes2){
          this.shoesX=188;
          this.shoesY=482;
-         this.persons[person].scoreShoes=15;
+         this.persons[person].scoreShoes=6;
       }
 
       if(person == 1 && this.persons[person].armario[2]==this.person2shoes3){
          this.shoesX=188;
          this.shoesY=539;
-         this.persons[person].scoreShoes=20;
+         this.persons[person].scoreShoes=8;
       }
 
       //person 3
       if(person == 2 && this.persons[person].armario[0]==this.person3Top1){
          this.topX=170;
          this.topY=176;
-         this.persons[person].scoreTop=33.3;
+         this.persons[person].scoreTop=13.3;
       }
 
       if(person == 2 && this.persons[person].armario[0]==this.person3Top2){
          this.topX=170;
          this.topY=182;
-         this.persons[person].scoreTop=5;
+         this.persons[person].scoreTop=2;
       }
 
       if(person == 2 && this.persons[person].armario[0]==this.person3Top3){
          this.topX=168;
          this.topY=189;
-         this.persons[person].scoreTop=15;
+         this.persons[person].scoreTop=6;
       }
 
       if(person == 2 && this.persons[person].armario[1] == this.person3pant1){
          this.pantX=159;
          this.pantY=315;
-         this.persons[person].scorePants=33.3;
+         this.persons[person].scorePants=13.3;
       }
 
       if(person == 2 && this.persons[person].armario[1] == this.person3pant2){
          this.pantX=156;
          this.pantY=322;
-         this.persons[person].scorePants=10;
+         this.persons[person].scorePants=4;
       }
 
       if(person == 2 && this.persons[person].armario[1] == this.person3pant3){
          this.pantX=158;
          this.pantY=328;
-         this.persons[person].scorePants=20;
+         this.persons[person].scorePants=8;
       }
 
       if(person == 2 && this.persons[person].armario[2] == this.person3shoes1){
          this.shoesX=195;
          this.shoesY=555;
-         this.persons[person].scoreShoes=33.3;
+         this.persons[person].scoreShoes=13.3;
       }
 
        if(person == 2 && this.persons[person].armario[2] == this.person3shoes2){
          this.shoesX=195;
          this.shoesY=565;
-         this.persons[person].scoreShoes=10;
+         this.persons[person].scoreShoes=4;
       }
 
       if(person == 2 && this.persons[person].armario[2] == this.person3shoes3){
          this.shoesX=194;
          this.shoesY=565;
-         this.persons[person].scoreShoes=25;
+         this.persons[person].scoreShoes=10;
       }
 
       //person 4
       if(person == 3 && this.persons[person].armario[0] == this.person4Top1){
          this.topX=222;
          this.topY=190;
-         this.persons[person].scoreTop=33.3;
+         this.persons[person].scoreTop=13.3;
       }
 
       if(person == 3 && this.persons[person].armario[0] == this.person4Top2){
          this.topX=180;
          this.topY=235;
-         this.persons[person].scoreTop=25;
+         this.persons[person].scoreTop=10;
       }
 
       if(person == 3 && this.persons[person].armario[0] == this.person4Top3){
          this.topX=168;
          this.topY=235;
-         this.persons[person].scoreTop=25;
+         this.persons[person].scoreTop=10;
       }
 
       if(person == 3 && this.persons[person].armario[1] == this.person4pant1){
          this.pantX=216;
          this.pantY=326;
-         this.persons[person].scorePants=33.3;
+         this.persons[person].scorePants=13.3;
       }
 
       if(person == 3 && this.persons[person].armario[1] == this.person4pant2){
          this.pantX=218;
          this.pantY=319;
-         this.persons[person].scorePants=30;
+         this.persons[person].scorePants=12;
       }
 
       if(person == 3 && this.persons[person].armario[1] == this.person4pant3){
          this.pantX=217;
          this.pantY=327;
-         this.persons[person].scorePants=10;
+         this.persons[person].scorePants=4;
       }
 
       if(person == 3 && this.persons[person].armario[2] == this.person4shoes1){
          this.shoesX=218;
          this.shoesY=591;
-         this.persons[person].scoreShoes=33.3;
+         this.persons[person].scoreShoes=13.3;
       }
 
       if(person == 3 && this.persons[person].armario[2] == this.person4shoes2){
          this.shoesX=210;
          this.shoesY=508;
-         this.persons[person].scoreShoes=5;
+         this.persons[person].scoreShoes=2;
       }
 
       if(person == 3 && this.persons[person].armario[2] == this.person4shoes3){
          this.shoesX=216;
          this.shoesY=598;
-         this.persons[person].scoreShoes=15;
+         this.persons[person].scoreShoes=6;
       }
 
       //person 5
       if(person == 4 && this.persons[person].armario[0] == this.person5Top1){
          this.topX=170;
          this.topY=200;
-         this.persons[person].scoreTop=33.3;
+         this.persons[person].scoreTop=13.3;
       }
 
       if(person == 4 && this.persons[person].armario[0] == this.person5Top2){
          this.topX=178;
          this.topY=203;
-         this.persons[person].scoreTop=27;
+         this.persons[person].scoreTop=12;
       }
 
       if(person == 4 && this.persons[person].armario[0] == this.person5Top3){
          this.topX=159;
          this.topY=210;
-         this.persons[person].scoreTop=10;
+         this.persons[person].scoreTop=4;
       }
 
       if(person == 4 && this.persons[person].armario[1] == this.person5pant1){
          this.pantX=148;
          this.pantY=306;
-         this.persons[person].scorePants=33.3;
+         this.persons[person].scorePants=13.3;
       }
 
       if(person == 4 && this.persons[person].armario[1] == this.person5pant2){
          this.pantX=180;
          this.pantY=300;
-         this.persons[person].scorePants=15;
+         this.persons[person].scorePants=6;
       }
 
       if(person == 4 && this.persons[person].armario[1] == this.person5pant3){
          this.pantX=180;
          this.pantY=300;
-         this.persons[person].scorePants=18;
+         this.persons[person].scorePants=8;
       }
 
       if(person == 4 && this.persons[person].armario[2] == this.person5shoes1){
          this.shoesX=186;
          this.shoesY=628;
-         this.persons[person].scoreShoes=33.3;
+         this.persons[person].scoreShoes=13.3;
       }
 
       if(person == 4 && this.persons[person].armario[2] == this.person5shoes2){
          this.shoesX=188;
          this.shoesY=623;
-         this.persons[person].scoreShoes=15;
+         this.persons[person].scoreShoes=6;
       }
 
       if(person == 4 && this.persons[person].armario[2] == this.person5shoes3){
          this.shoesX=192;
          this.shoesY=594;
-         this.persons[person].scoreShoes=5;
+         this.persons[person].scoreShoes=2;
       }
    }
 
