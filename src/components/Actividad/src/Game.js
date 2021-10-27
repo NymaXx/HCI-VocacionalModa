@@ -83,7 +83,7 @@ class Game {
       this.person2Text = "¡Hola! qué bonita tienda. La próxima semana viajaré a Bogotá y me han dicho que es muy frio. Quiero algo abrigado pero que no me haga ver gorda. ¡Te lo agradezco!"
       this.person2hints = "Clima frio y que no la haga ver gorda"
       this.person2Initial = app.loadImage("./images/sit2/2normal.png");
-      this.person2Nude = app.loadImage("./images/sit2/sit2Nude.png");
+      this.person2Nude = app.loadImage("./images/sit2/sit2nude.png");
       //
       this.person2Top1 = app.loadImage("./images/sit2/2blusaCorr.png");
       this.person2Top2 = app.loadImage("./images/sit2/2blusa2.png");
@@ -154,7 +154,7 @@ class Game {
       //person5
       this.person5Text = "¡Esta tienda tiene de todo!, necesito algo formal pero tengo el problema de que iré a un lugar muy caluroso. ¿Podrías recomendarme algo fresco pero que funcione en una reunión? "
       this.person5hints = "Formal y fresco"
-      this.person5Initial = app.loadImage("./images/sit5/5inicial.png");
+      this.person5Initial = app.loadImage("./images/sit5/5Inicial.png");
       this.person5Nude = app.loadImage("./images/sit5/naked5.png");
       //
       this.person5Top1 = app.loadImage("./images/sit5/5correctBLOUSE.png");
