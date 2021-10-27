@@ -318,6 +318,11 @@ class Game {
 
             app.text(`¿Qué tan satisfechos quedaron tus clientes?:`,440, 282);
             //${Math.floor(this.finalScore)}
+
+            //METODOS ADD RESULT Y FINISH PUESSSSS
+
+            this.actividad.addResult([{id:"DISEÑO DE  MODAS", value: this.finalScore}]);
+            this.actividad.finish();
             break;
 
 
