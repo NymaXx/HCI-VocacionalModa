@@ -49,7 +49,7 @@ class Game {
 
       this.clotheButton = app.loadImage("./images/botonPrenda.png");
       this.sadface = app.loadImage("./images/sadface.png");
-      this.mediumface = app.loadImage("./images/mediumface.png");
+      this.mediumface = app.loadImage("C./images/mediumface.png");
       this.happyface = app.loadImage("./images/happyface.png");
 
 
@@ -306,7 +306,7 @@ class Game {
                app.image(this.sadface, 570,315,140,140);
             };
 
-            if(this.finalScore >= 167 && this.finalScore <= 135){
+            if(this.finalScore >= 67 && this.finalScore <= 135){
                app.image(this.mediumface, 570,315,140,140);
             };
 
